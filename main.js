@@ -12,13 +12,13 @@
 // }
 
 function renderCoffee(coffee){
-var html='<div class="coffee col-6">';
+    var html='<div class="coffee col-6">';
     // var html=html+coffee.id;
-    var html=html+'<div id="coffees">'
+    // var html=html+'<div id="coffees">'
     var html=html+'<span>'+coffee.name+'</span>';
     var html=html+'<span>'+coffee.roast+'</span>';
     html=html+'</div>';
-    html=html+'</div>';
+    // html=html+'</div>';
     return html;
 }
 
