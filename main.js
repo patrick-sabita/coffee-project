@@ -9,18 +9,20 @@
 //     html += '</tr>';
 //
 //     return html;
-// }
+
 
 function renderCoffee(coffee){
-    var html='<div class="coffee col-6">';
+    var html='<div class=" coffee col-6">';
     // var html=html+coffee.id;
     // var html=html+'<div id="coffees">'
-    var html=html+'<span>'+coffee.name+'</span>';
-    var html=html+'<span>'+coffee.roast+'</span>';
+    var html=html+'<h2>'+coffee.name+'</h2>';
+    var html=html+'<p>'+coffee.roast+'</p>';
     html=html+'</div>';
     // html=html+'</div>';
     return html;
 }
+
+
 
 function renderCoffees(coffees) {
     var html = '';
@@ -29,10 +31,11 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-var lightroast=document.getElementsByClassName()
+
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
+    console.log(selectedRoast);
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
@@ -59,6 +62,27 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+// var allCoffee=document.getElementById("all");
+// var selecting =document.getElementsByClassName("choosing-coffee");
+// function choosingCoffee(){
+// for (var i = 0; i < coffees.length; i++) {
+//     if (allCoffee) {
+//         selecting[0].innerHtml=coffees.roast;
+//
+//     }
+// }
+// };
+
+    // var lRoast = document.getElementsByClassName('lightRoast');
+    // var light = document.getElementById("light");
+
+
+
+
+
+
+
+
 
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
