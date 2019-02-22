@@ -34,15 +34,15 @@ function renderCoffees(coffees) {
 
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    console.log(selectedRoast);
+    var selectedRoast = roastSelection.value;;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
+
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
-         else if (selectedRoast === 'all') {
-           // filteredCoffees.push (coffees);
+        else if (selectedRoast === 'all') {
+            // filteredCoffees.push (coffees);
             filteredCoffees=coffees;
         }
     });
@@ -66,6 +66,9 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+
+coffees.reverse();
+
 // var allCoffee=document.getElementById("all");
 // var selecting =document.getElementsByClassName("choosing-coffee");
 // function choosingCoffee(){
@@ -77,8 +80,8 @@ var coffees = [
 // }
 // };
 
-    // var lRoast = document.getElementsByClassName('lightRoast');
-    // var light = document.getElementById("light");
+// var lRoast = document.getElementsByClassName('lightRoast');
+// var light = document.getElementById("light");
 
 
 
