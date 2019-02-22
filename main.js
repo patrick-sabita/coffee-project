@@ -112,6 +112,8 @@ coffees.reverse();
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+// i just added a feature below so that we dont need to click on submit buttom to change the name and type of coffee
+roastSelection.addEventListener('change', updateCoffees)
 
 // var roastSelection = document.querySelector('#roast-selection-bottom');
 
