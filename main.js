@@ -135,3 +135,12 @@ function coffeeSearch(e) {
 
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+var roastSelectionBottom=document.getElementById("coffee-name-search-bottom")
+var newCoffee="new coffee";
+function newCoffee(coffees){
+    if (roastSelectionBottom.value=== newCoffee){
+        filteredCoffees.push(coffee);
+
+    }
+
+}
